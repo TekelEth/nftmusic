@@ -1,13 +1,19 @@
 module.exports = {
-  content: [],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
+    fontFamily: {
+      Roboto: ["Roboto", "sans-serif"],
+      Poppins: ["Poppins", "sans-serif"],
+      DW: ["Druk Wide Cy Web Bold", "sans-serif"],
+    },
     extend: {
-      fontFamily: {
-        Roboto: [ 'Roboto', 'sans-serif'],
-        Poppins: ['Poppins', 'sans-serif'],
-        DW: ['Druk Wide Cy Web Bold', 'sans-serif']
-      }
+      backgroundImage: {
+        section1: "url(/imgs/hero/section1.png)",
+      },
     },
   },
   plugins: [],
-}
+};
